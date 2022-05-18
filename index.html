@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+  
+  
+<link rel="stylesheet" href="styling.css">
+ <script src="script.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#logo" class="active">Group 260</a>
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  
+  <a href="javascript:void(0);"class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+<br/>
+</head>
+<body>
+
+  <h2>Create  Account</h2>
+    
+      <div class="container">
+        <form>
+          <label for="usrname">Username:</label>
+          <input type="text" id="usrname" name="usrname" required placeholder="Enter username">
+
+      <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <label for="number">Phone number:</label>
+    <input type="number" placeholder="Enter phone number">
+          <label for="pwd">Password:</label>
+         <input type="password" id="pwd" name="pwd" placeholder="Create password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+         
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+      <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+      </script>
+</body>
+
+<FOOter>
+  <div class="div2">
+    Copyright@2022| Group 260 second project
+  </div>
+
+</FOOter>
+
+  
+  
+</html>
